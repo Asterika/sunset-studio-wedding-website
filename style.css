@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat');
+
+:root {
+  --main-blue: #3366CC;
+}
+
+/* GENERAL STYLES */
+body {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  margin: 0 auto;
+}
+a {
+  background-color: transparent;
+  color: var(--main-blue);
+  text-decoration: none;
+}
+/* change hover color of nav links to golden-yellow */
+a:hover {
+  color: gold;
+}
+
+/* TOPBAR */
+.topbar {
+  background-image: url(./images/watercolor-topbar-blue.png);
+  height: 1.0rem;
+  opacity: 0.9;
+  width: 100%;
+  /* width: 100vw; */
+}
+
+/* ===== MR & MRS ====== */
+.mr-mrs, .mrs, .and {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+}
+.and {
+  font-size: 2.8rem;
+  padding-left: 2%;
+}
+.mrs {
+  padding-left: 4%;
+}
+
+/* ===== NAVIGATION ====== */
+/* Citation: Please note that this is an adaptation of code provided by WS3 Schools at: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+  width: 210px;
+}
+
+/* Add styling to the main nav container */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  display: inline-block;
+  color: var(--fresh-green);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.7em;
+  padding-bottom: 1em;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(74, 189, 172, 0.9);
+  color: white;
+}
+/* Add an active class to highlight the current page */
+.active {
+  /* background-color: var(--fresh-green); */
+  color: var(--fresh-green);
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* SPA SECTIONS */
+#home,
+#our-story,
+#details,
+#photos,
+#registry,
+#guestbook {
+  height: 100vh;
+}
+
+/* IMAGES */
+.section-img, .main-img {
+  height:auto;
+  width: 100%;
+}
+.main-img {
+  margin-top: -1%;
+}
+
+/* MEDIA QUERIES */
+/* logo placement for iPad Pro */
+@media screen and (max-width: 1400px) and (min-width:855px){
+  .logo {
+    margin-left: -1.2em;
+  }
+}
+/* logo placement for iPhones, Pixel, and Galaxy */
+@media screen and (max-width: 854px) and (min-width:320px){
+  .logo {
+    margin-left: 1em;
+  }
+}
+/* general media queries */
+@media screen and (max-width: 850px){
+  .main-img, .section-img {
+    height: 100%;
+    object-fit: cover;
+    width: 100vw;
+  }
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 850px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 850px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
