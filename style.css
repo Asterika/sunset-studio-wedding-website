@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat');
 
 :root {
+  --charcoal: #202020;
+  --fresh-green: #4ABDAC;
   --main-blue: #3366CC;
 }
 
@@ -31,6 +33,7 @@ a:hover {
 
 /* ===== MR & MRS ====== */
 .mr-mrs, .mrs, .and {
+  color: var(--charcoal);
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
 }
@@ -61,10 +64,12 @@ a:hover {
 }
 /* Style the links inside the navigation bar */
 .topnav a {
-  border-radius: 4px;
+  /* background-color: white;
+  border: 2px solid var(--fresh-green); */
+  border-radius: 6px;
   float: center;
   display: inline-block;
-  color: var(--fresh-green);
+  color: var(--charcoal);
   font-size: 1.5rem;
   text-align: center;
   padding: 0.7em;
@@ -72,8 +77,9 @@ a:hover {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgba(74, 189, 172, 0.9);
-  color: white;
+  background-color: white;
+  border: .1rem solid var(--fresh-green);
+  color: var(--fresh-green);
 }
 /* Add an active class to highlight the current page */
 .active {
