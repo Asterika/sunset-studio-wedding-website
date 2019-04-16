@@ -16,6 +16,18 @@ body {
 a {
   text-decoration: none;
 }
+.divider {
+  /* height: 20px;
+  width: 80px; */
+  /* margin-top: -2.5%; */
+  height: 14%;
+  width: 18%;
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  /* text-transform: lowercase; */
+}
 .main-container {
   display: flex;
   flex-flow: row nowrap;
@@ -24,22 +36,30 @@ a {
   height: 100vh;
   width: 100vw;
 }
-.sidebar {
-  /* align-self: center; */
-  height: 50vh;
-  width: 100vh;
-}
+/* .full-container {
+  align-self: flex-start;
+} */
 .map-container {
   /* align-self: center; */
   border: 1px inset grey;
   height: 100vh;
   width: 100vh;
 }
-.divider {
-  /* height: 20px;
-  width: 80px; */
-  height: 6%;
-  width: 15%;
+.sidebar {
+  /* align-self: center; */
+  height: 50vh;
+  width: 100vh;
+}
+
+/* ===== BORDERS ====== */
+.border-bottom {
+  align-self: flex-end;
+  height: 130px;
+  width: 130px;
+}
+.border {
+  height: 40%;
+  width: 25%;
 }
 
 /* ===== BUTTONS ====== */
@@ -116,7 +136,7 @@ a {
 .topnav a:hover {
   color: var(--fresh-green);
   cursor: url(images/deep-peach-flower.png), auto;
-  transform: rotate(12deg);
+  /* transform: rotate(12deg); */
 }
 /* Add an active class to highlight the current page */
 .active {
