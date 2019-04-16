@@ -156,6 +156,7 @@ h1 {
 #guestbook {
   border: 1px solid grey;
   height: 100vh;
+  width: 100vw;
 }
 
 /* ===== IMAGES ====== */
@@ -174,6 +175,15 @@ h1 {
 }
 /* logo placement for iPhones, Pixel, and Galaxy */
 @media screen and (max-width: 854px) and (min-width:320px){
+  #home,
+  #our-story,
+  #details,
+  #photos,
+  #registry,
+  #guestbook {
+    height: 100vh;
+    max-width: 100%;
+  }
   .mr, .mrs, .and {
     font-size: 2rem;
   }
