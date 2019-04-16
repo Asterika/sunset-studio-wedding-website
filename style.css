@@ -4,25 +4,62 @@
   --charcoal: #202020;
   --fresh-green: #4ABDAC;
   --main-blue: #3366CC;
+  --salmon-pink: #FA8072;
 }
 
-/* GENERAL STYLES */
+/* ===== GENERAL STYLES ====== */
 body {
   font-family: 'Montserrat', sans-serif;
   position: relative;
   margin: 0 auto;
 }
 a {
-  background-color: transparent;
-  color: var(--main-blue);
   text-decoration: none;
 }
-/* change hover color of nav links to golden-yellow */
-a:hover {
-  color: gold;
+.main-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.sidebar {
+  /* align-self: center; */
+  height: 50vh;
+  width: 100vh;
+}
+.map-container {
+  /* align-self: center; */
+  border: 1px inset grey;
+  height: 100vh;
+  width: 100vh;
+}
+.divider {
+  /* height: 20px;
+  width: 80px; */
+  height: 6%;
+  width: 15%;
 }
 
-/* TOPBAR */
+/* ===== BUTTONS ====== */
+.button {
+  border: 2px solid var(--fresh-green);
+  border-radius: 30px;
+  color: var(--fresh-green);
+  font-size: 1.1rem;
+  /* font-weight: bold; */
+  height: 15%;
+  width: 25%;
+  text-transform: uppercase;
+}
+.button:hover {
+  border-color: var(--salmon-pink);
+  color: var(--salmon-pink);
+  cursor: url(images/deep-peach-flower.png), auto;
+}
+
+/* ===== TOPBAR ====== */
 .topbar {
   background-image: url(./images/watercolor-topbar-blue.png);
   height: 1.0rem;
@@ -59,7 +96,7 @@ a:hover {
   background-color: white;
   overflow: hidden;
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   width: 100vw;
 }
 /* Style the links inside the navigation bar */
@@ -78,7 +115,7 @@ a:hover {
 /* Change the color of links on hover */
 .topnav a:hover {
   color: var(--fresh-green);
-  cursor: url(images/sunflower32.png), auto;
+  cursor: url(images/deep-peach-flower.png), auto;
   transform: rotate(12deg);
 }
 /* Add an active class to highlight the current page */
@@ -90,17 +127,18 @@ a:hover {
   display: none;
 }
 
-/* SPA SECTIONS */
+/* ===== SPA SECTIONS ====== */
 #home,
 #our-story,
 #details,
 #photos,
 #registry,
 #guestbook {
+  border: 1px solid grey;
   height: 100vh;
 }
 
-/* IMAGES */
+/* ===== IMAGES ====== */
 .section-img, .main-img {
   height:auto;
   width: 100%;
@@ -109,7 +147,7 @@ a:hover {
   margin-top: -1%;
 }
 
-/* MEDIA QUERIES */
+/* ===== MEDIA QUERIES ====== */
 /* logo placement for iPad Pro */
 @media screen and (max-width: 1400px) and (min-width:855px){
   .logo {
