@@ -78,6 +78,7 @@ a:hover {
 /* Change the color of links on hover */
 .topnav a:hover {
   color: var(--fresh-green);
+  cursor: url(images/sunflower32.png), auto;
   transform: rotate(12deg);
 }
 /* Add an active class to highlight the current page */
