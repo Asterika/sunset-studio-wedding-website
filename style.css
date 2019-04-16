@@ -77,13 +77,11 @@ a:hover {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: white;
-  border: .1rem solid var(--fresh-green);
   color: var(--fresh-green);
+  transform: rotate(12deg);
 }
 /* Add an active class to highlight the current page */
 .active {
-  /* background-color: var(--fresh-green); */
   color: var(--fresh-green);
 }
 /* Hide the link that should open and close the topnav on small screens */
