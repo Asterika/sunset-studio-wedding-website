@@ -78,6 +78,7 @@ h1 {
   border-color: var(--salmon-pink);
   color: var(--salmon-pink);
   cursor: url(images/deep-peach-flower.png), auto;
+  /* cursor: url(images/sunflower32.png), auto; */
 }
 
 /* ===== TOPBAR ====== */
@@ -190,6 +191,13 @@ h1 {
   }
   .topnav, .topnav > a {
     text-align: center;
+  }
+  .main-container {
+    flex-flow: row wrap;
+  }
+  iframe {
+    height: 100vh;
+    width: 100vw;
   }
 }
 /* general media queries */
