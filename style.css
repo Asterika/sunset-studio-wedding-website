@@ -149,6 +149,14 @@ h1 {
   display: none;
 }
 
+/* ===== MAIN IMAGE ====== */
+.main-photo{
+  display:inline-block;
+  margin: 0 auto;
+  width: 97%;
+}
+
+
 /* ===== SPA SECTIONS ====== */
 #home,
 #our-story,
